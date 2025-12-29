@@ -28,11 +28,16 @@ header {
   padding: 10px;
 
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-content: center;
   position: sticky;
   top: 0;
   z-index: 1;
+}
+
+header h1 {
+  color: var(--fundo-principal);
+  font-size: 1.3em;
 }
 
 nav#menu ul {
@@ -256,6 +261,23 @@ footer a:hover {
 }
 
 @media screen and (min-width: 768px) {
+  main {
+    grid-template-columns: auto 300px 1fr auto;
+
+  }
+  
+  section#ficha {
+    grid-column: 2 / 3;
+    height: fit-content;
+    position: sticky;
+    top: 65px;
+  }
+
+  section#detalhes {
+    grid-column: 3 /4;
+  }
+
+
   #skill-container {
     grid-template-columns: 1fr 1fr;
   }
