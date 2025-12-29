@@ -15,11 +15,21 @@
   --fundo-card: white; 
 }
 
+body.escuro {
+  --fundo-principal: #222222;
+  --texto: #E0E0E0;
+  --texto-inverso: #e6d6d6;
+  --destaque: #b92323;
+  --destaque-inverso: #A73917;
+  --fundo-card: #444444; 
+}
+
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.5em;
   background-color: var(--fundo-principal);
   color: var(--texto);
+  transition: background-color 0.5s, color 0.5s;
 }
 
 header {
@@ -36,7 +46,7 @@ header {
 }
 
 header h1 {
-  color: var(--fundo-principal);
+  color: var(--texto-inverso);
   font-size: 1.3em;
 }
 
