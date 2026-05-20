@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="estilos/style.css">
     <script src="https://kit.fontawesome.com/0758603648.js" crossorigin="anonymous"></script>
 </head>
+
+<div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg">
+</div>
+
 <body class="escuro">
     <header>
         <h1>Portfolio</h1>
@@ -85,7 +91,7 @@
                     <div class="item">
                         <div class="info">
                             <span class="nome">
-                                <i class="fa-solid fa-code"></i>HTML5
+                                <i class="fa-solid fa-code"></i>FastAPI
                             </span>
                             <span class="porcent">
                                 100%
@@ -99,7 +105,7 @@
                     <div class="item">
                         <div class="info">
                             <span class="nome">
-                                <i class="fa-solid fa-code"></i>CSS3
+                                <i class="fa-solid fa-code"></i>Node.js / Nest.js
                             </span>
                             <span class="porcent">
                                 100%
@@ -113,7 +119,7 @@
                     <div class="item">
                         <div class="info">
                             <span class="nome">
-                                <i class="fa-solid fa-code"></i>JavaScript
+                                <i class="fa-solid fa-code"></i>Spring Boot
                             </span>
                             <span class="porcent">
                                 80%
@@ -141,7 +147,79 @@
                     <div class="item">
                         <div class="info">
                             <span class="nome">
+                                <i class="fa-solid fa-code"></i>React
+                            </span>
+                            <span class="porcent">
+                                100%
+                            </span>
+                        </div>
+                        <div class="barra">
+                            <div class="progresso" style="width: 100%;"></div>
+                        </div>
+                    </div>
+
+                    
+
+                    <div class="item">
+                        <div class="info">
+                            <span class="nome">
+                                <i class="fa-solid fa-code"></i>MySQL/PostgreSQL
+                            </span>
+                            <span class="porcent">
+                                100%
+                            </span>
+                        </div>
+                        <div class="barra">
+                            <div class="progresso" style="width: 100%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="info">
+                            <span class="nome">
+                                <i class="fa-solid fa-code"></i>MongoDB
+                            </span>
+                            <span class="porcent">
+                                75%
+                            </span>
+                        </div>
+                        <div class="barra">
+                            <div class="progresso" style="width: 75%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="info">
+                            <span class="nome">
                                 <i class="fa-solid fa-person-rays"></i>Comunicação
+                            </span>
+                            <span class="porcent">
+                                100%
+                            </span>
+                        </div>
+                        <div class="barra">
+                            <div class="progresso" style="width: 100%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="info">
+                            <span class="nome">
+                                <i class="fa-solid fa-person-rays"></i>Proatividade
+                            </span>
+                            <span class="porcent">
+                                100%
+                            </span>
+                        </div>
+                        <div class="barra">
+                            <div class="progresso" style="width: 100%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="info">
+                            <span class="nome">
+                                <i class="fa-solid fa-person-rays"></i>Adaptabilidade
                             </span>
                             <span class="porcent">
                                 100%
@@ -172,29 +250,18 @@
                 <h2><i class="fa-solid fa-trowel-bricks"></i>Projetos</h2>
 
                 <div id="projeto-container">
-                    <div class="projeto"> 
-                        <img src="imagens/escalonador.jpeg" alt="" class="foto">
-                        <div class="projeto-info">
-                            <h3 class="titulo">Projeto escalonador</h3>
-                            <p>Projeto para treino de Python e Sistema Operacional</p>
-                            <details class="descrição">
-                                <summary>Saiba mais...</summary>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi voluptate quam, quibusdam magnam hic, iusto id inventore cumque fugiat quisquam a accusantium quis quia nemo omnis amet cum voluptatem vitae!</p>
-                            </details>
-                                
-                        </div>
-                    </div>
+                    
 
                     <div class="projeto"> <!--Projeto 02-->
-                        <img src="imagens/mario.jpeg" alt="projeto web mario" class="foto">
+                        <img src="imagens/trackingHub.jpeg" alt="Tracking Hub" class="foto">
                         <div class="projeto-info">
-                            <h3 class="titulo">Projeto jogo web</h3>
-                            <p>Projeto para treino de animações css</p>
+                            <h3 class="titulo">Gateway de rastreio</h3>
+                            <p>Projeto desenvolvido para integrar diferentes serviços de operadores logísticos em um HUB, abstraindo as regras específicas de cada API e oferecendo uma integração simplificada para o cliente.</p>
                             <details class="descrição">
-                                <summary>Saiba mais...</summary>
-                                <p>Depois de aprofundar meus estudos em Grid Layout e Flexbox, decidi explorar mais a fundo o mundo das animações em CSS. Para isso, escolhi este projeto, que combina animações dinâmicas com o desafio de gerenciar posições e detectar colisões, oferecendo uma experiência prática e envolvente de interação visual.
-                                    <a href="https://pedroaf12.github.io/web-game/">https://pedroaf12.github.io/web-game/</a>
+                                <summary>Saiba mais...(Clique Aqui)</summary>
+                                <p style="text-align: justify;">Este projeto foi criado para resolver o desafio de integrar múltiplos serviços de rastreamento de encomendas, cada um com suas próprias APIs e regras de autenticação. O gateway atua como um intermediário, recebendo requisições do cliente e encaminhando-as para os serviços logísticos correspondentes, processando as respostas e retornando informações consolidadas ao cliente. O sistema é construído com uma arquitetura modular, permitindo fácil adição de novos serviços logísticos no futuro, e inclui recursos como cache de respostas para melhorar a performance e tratamento de erros para garantir a robustez da aplicação.
                                 </p>
+                                <p><a href="https://github.com/pedroaf12/api-trackinghub" target="_blank">Mais detalhes no GitHub</a></p>
                             </details>
                                 
                         </div>
@@ -203,13 +270,25 @@
                     </div>
 
                     <div class="projeto"> <!--Projeto 01-->
-                        <img src="imagens/genshin.jpeg" alt="" class="foto">
+                        <img src="imagens/dashboard.jpeg" alt="" class="foto">
                         <div class="projeto-info">
-                            <h3 class="titulo">Projeto CRUD JS</h3>
-                            <p>Projeto Validação de Campos</p>
+                            <h3 class="titulo">E-Commerce Dashboard</h3>
+                            <p>Sistema de gestão e visualização de pedidos, produtos e custos para e-commerce, com dashboard de métricas financeiras.</p>
                             <details class="descrição">
-                                <summary>Saiba mais...</summary>
-                                <p><a href="https://pedroaf12.github.io/site-genshin/auth/index.html">https://pedroaf12.github.io/site-genshin/auth/index.html</a></p>
+                                <summary>Saiba mais...(Clique Aqui)</summary>
+                                <p>
+                                    Este projeto foi desenvolvido para atender a necessidade de um cliente de e-commerce que precisava de visibilidade sobre suas operações financeiras. O sistema permite:
+                                    <ul>
+                                        <li>Visualizar métricas consolidadas (faturamento, custos, lucro)</li>
+                                        <li>Cadastrar produtos com preços de venda</li>
+                                        <li>Registrar custos de produção de cada produto</li>
+                                        <li>Receber pedidos via webhook de plataformas externas</li>
+                                        <li>Filtrar dados por período</li>
+                                        <li>Calcular lucro automaticamente</li>
+                                        <li><a href="https://github.com/pedroaf12/teste-bk-company" target="_blank">Veja mais detalhes da arquitetura no GitHub</a></li>
+                                    </ul>
+                                     
+                                </p>
                             </details>
                                 
                         </div>

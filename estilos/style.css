@@ -251,6 +251,7 @@ article#experience div.exp ul {
   border-radius: 8px;
 }
 
+
 footer {
   background-color: var(--destaque);
   color: var(--texto);
@@ -294,6 +295,11 @@ footer a:hover {
     flex-direction: row-reverse;
     justify-content: space-between;
   }
+  #projeto-container .descricao ul,
+#projeto-container .descrição ul {
+  padding-left: 25px;
+  margin-top: 10px;
+}
 
   #projeto-container .projeto-info {
     max-width: 80%;
@@ -303,5 +309,69 @@ footer a:hover {
     aspect-ratio: 1/1;
     max-width: 20%;
     max-height: 200px;
+  }
+}
+
+
+/* =========================
+   MODAL DAS IMAGENS
+========================= */
+
+#projeto-container .foto {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#projeto-container .foto:hover {
+  transform: scale(1.02);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  padding: 20px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+
+  background-color: rgba(0, 0, 0, 0.9);
+
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  max-width: 95%;
+  max-height: 90vh;
+  border-radius: 10px;
+  animation: zoom 0.3s ease;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.close:hover {
+  color: #ccc;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
   }
 }
